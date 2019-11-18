@@ -27,43 +27,39 @@ html, body {
     margin: 0;
 }
 
-header div #search-box {
-    width: 450px;
-    height: 40px;
-    border-radius: 40px;
-    color: gray;
-    float: right;
-    margin-top: 30px;
+#search-box {
+    width: 400px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
     box-shadow: none;
     padding: 20px;
 }
 
-nav ul{
-    background: #F5FAF9;
-    padding: 7px;
-    margin: 5px;
+nav {
+    display: flex;
+    justify-content: center;
 }
 
-header nav ul li {
+nav ul li {
     display: inline;
     list-style: none;
     border-right: 2px solid #C79FB2;
-    padding: 0 20px 0 20px;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 600;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration:none;
     color: #C79FB2;
 }
 
-header nav ul li:first-child {
+nav ul li:first-child {
     margin-left: 40px;
 }
 
-header nav ul li:last-child {
+nav ul li:last-child {
     border-right: none;
     padding-right: 0;
 }
@@ -74,14 +70,15 @@ header nav ul li:last-child {
     max-width: 100%;
     background: url('../img/header.png') no-repeat;
     background-size: 100% 100%;
+    object-fit: contain;
     color: #ffffff;
     text-align: center;
 }
 
 #showcase h1 {
-    margin-top: 120px;
     font-size: 45px;
     margin-bottom: 10px;
+    line-height: 100px;
 }
 
 #showcase h3 {
@@ -182,7 +179,7 @@ header nav ul li:last-child {
 .box-text p, .box-text h4 {
     position: relative;
     margin: 0;
-    top: 52%;
+    top: 35%;
 }
 
 .box-text p {
@@ -223,8 +220,8 @@ header nav ul li:last-child {
 
 .rank {
     padding: 0;
-    display: inline;
-    margin: 0 5px 0 0;
+    display: block;
+    margin-top: -5%;
 }
 
 .ranking {
